@@ -37,7 +37,6 @@ resetBtn.addEventListener("click", ()=>{
                             <span>Index</span>
                             <span>Timestamp</span>
                         </div>
-                        <button class="lap-btn cover">Clear Laps</button>
     `;
     display.textContent = `00 : 00 : 00 : 00`;
 })
@@ -49,12 +48,6 @@ lapBtn.addEventListener("click", ()=>{
                         <span class="timestamp">${display.textContent}</span>
                     </li>`
     lapTable.innerHTML += clutter;
-})
-lapClearBtn.addEventListener("click", ()=>{
-    lapCount = 0;
-    lapTable.innerHTML = `
-    `
-    alert("Clicked");
 })
 
 function start(){
